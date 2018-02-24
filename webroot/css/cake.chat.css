@@ -1,0 +1,257 @@
+.login-box,
+.register-box{
+    width: 360px;
+    margin: 7% auto;
+}
+@media (max-width: 768px) {
+    .login-box,
+    .register-box {
+    width: 90%;
+    margin-top: 20px;
+    }
+}
+  
+.login-box-body,
+.register-box-body {
+    padding: 20px;
+    border-top: 0;
+    color: #666;
+}
+
+.login-logo,
+.register-logo {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 300;
+}
+
+.login-box-msg,
+.register-box-msg {
+  margin: 0;
+  text-align: center;
+  padding: 0 20px 20px 20px;
+}
+
+.logo, h1{
+    font-family: Lobster;
+    color: #508484;
+}
+
+.logo{
+    font-size: 30px;
+    margin-left: 5%;
+}
+
+.username{
+    margin-right: 50px;
+    margin-top: 20px;
+    color: #508484;
+}
+
+.navbar-header{
+    width: 360px;
+}
+
+.dropdown-menu{
+    width:100px !important;
+    min-width:100px !important;
+    background: #508484;
+    margin-right: 50px;
+}
+
+.logout{
+    color:#FFFFFF;
+}
+
+.logout:hover{
+    background: #508484 !important;
+    color: #424242;
+    cursor: pointer;
+}
+
+h4{
+    color: #508484;
+}
+
+.well{
+    overflow-y: scroll;
+    height: 100%; 
+    max-height: 500px;
+}
+
+.row{
+    border-bottom: 1px #508484 dotted; 
+    margin-bottom: 10px; 
+    padding-bottom: 10px;
+}
+
+.formpost{
+    background: #508484; 
+    color: white; 
+    float: right; 
+    margin-bottom: 20px;
+}
+
+.buttonphoto{
+    background: #508484; 
+    color: white; 
+    float: right; 
+    margin-bottom: 20px; 
+    margin-right: 20px;
+}
+
+.settings{
+    position: relative;
+}
+
+#settings_button:hover{
+    cursor: pointer;
+}
+
+.settings_box{
+    width: 100px;
+    display: none;
+    position: absolute;
+    right: 10%;
+    background: #FFFFFF;
+    z-index: 100;
+}
+
+.settings_option{
+    width: 100%;
+    background: #508484; 
+    color: white; 
+    margin-bottom: 1px;
+}
+
+#filename{
+    float: right; 
+    margin-top: 7px; 
+    margin-right: 2px;
+}
+
+#mybtn{
+    background: #508484 ; 
+    color: white ; 
+    float: right ; 
+    margin-bottom: 20px ; 
+    margin-right: 20px ;
+}
+
+#mybtn:hover{
+    color:#424242;    
+}
+
+.error{
+    color: red;
+}
+
+.well::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+.well::-webkit-scrollbar{
+	width: 8px;
+	background-color: #F5F5F5;
+}
+
+.well::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #508484;
+}
+
+#content{
+	background: #DCEDC8;
+}
+
+#myImg{
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover{
+    opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content{
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption{
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption{    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom{
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom{
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close{
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus{
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
